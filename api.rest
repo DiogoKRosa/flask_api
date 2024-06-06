@@ -1,0 +1,24 @@
+GET http://localhost:5000/obras HTTP/1.1
+Content-Type: application/json
+###
+POST http://localhost:5000/obras HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Palito" ,
+    "autor": "Diogo",
+    "ano": "2024" 
+}
+###
+PUT http://localhost:5000/obras/665fa3a77840ffdcd625ccba HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Cachorro",
+    "autor": "Diogo",
+    "ano": "2010"
+}
+
+###
+DELETE http://localhost:5000/obras/665fa3a77840ffdcd625ccba HTTP/1.1
+Content-Type:  application/json
